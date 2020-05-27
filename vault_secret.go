@@ -2,10 +2,12 @@ package vaultsecret
 
 import "fmt"
 
-func SetParams() {
-	fmt.Println("success")
+func SetParams(p VaultSecretParams) {
+	fmt.Println("SetParams success" + p.Source)
 }
 
-func GetSecret(string key) string {
+func GetSecret(key string) string {
+	fmt.Println("GetSecret success " + key)
 
+	return "GetSecret success"
 }

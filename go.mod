@@ -1,3 +1,3 @@
-module github.com/KebaCorp/go-vault-secret
+module github.com/KebaCorp/govaultsecret
 
 go 1.14

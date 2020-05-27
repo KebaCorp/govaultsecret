@@ -1,15 +1,15 @@
-package vaultsecret_test
+package vaultsecret
 
 import (
+	"fmt"
 	"testing"
-
-	"github.com/KebaCorp/go-vault-secret/vaultsecret"
 )
 
-var (
-	databaseURL string
-)
+func TestSetParams(m *testing.T) {
+	SetParams(New())
+}
 
-func TestSetParams(m *testing.M) {
-	vaultsecret.SetParams()
+func TestGetSecret(m *testing.T) {
+	s := GetSecret("test")
+	fmt.Println(s)
 }
